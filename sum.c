@@ -1,5 +1,5 @@
 /* Practicum Modeleren Simuleren 
- * Jan Laan (5756529) & Joost Hekman (5887232)
+ * Joost Hekman (5887232)
  *
  * Assignment 1, part 3:
  * Compute a large summation using different methods to see 
