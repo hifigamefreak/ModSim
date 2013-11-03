@@ -29,6 +29,7 @@ float kahan(int N)
    return result;
 }
 
+/* The main function */
 int main(void)
 {
    int i, j;

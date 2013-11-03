@@ -1,5 +1,5 @@
 /* Practicum Modeleren Simuleren 
- * Bas Vlaszaty(5783445) & Joost Hekman (5887232)
+ * Joost Hekman (5887232)
  *
  * Assignment 1, part 1:
  * Gather some statistics on floats, doubles and long doubles.
@@ -8,9 +8,8 @@
 #include <math.h>
 #include <float.h>
 
-
-
-
+/* findmaxf will try to find the largest number that can be stored in  * a floating point representation (single precision)
+ */
 float findmaxf() {
    float ppx = 0.0;
    float px = 0.0;
@@ -41,6 +40,8 @@ float findmaxf() {
    return ppx;
 }
 
+/* findminf will try to find the smallest number that can be stored in * a floating point representation (single precision)
+ */
 float findminf() {
    float ppx = 0.0;
    float px = 0.0;
@@ -69,6 +70,8 @@ float findminf() {
    return ppx;
 }
 
+/* findmaxd will try to find the largest number that can be stored in  * a floating point representation (double precision)
+ */
 double findmaxd() {
    double ppx = 0.0;
    double px = 0.0;
@@ -98,7 +101,8 @@ double findmaxd() {
 
    return ppx;
 }
-
+/* findmind will try to find the smallest number that can be stored in * a floating point representation (double precision)
+ */
 double findmind() {
    double ppx = 0.0;
    double px = 0.0;
@@ -127,6 +131,8 @@ double findmind() {
    return ppx;
 }
 
+/* findmaxld will try to find the largest number that can be stored in * a floating point representation (double precision, extended range)
+ */
 long double findmaxld() {
    long double ppx = 0.0;
    long double px = 0.0;
@@ -156,6 +162,10 @@ long double findmaxld() {
    return ppx;
 }
 
+/* findminld will try to find the smallest number that can be stored 
+ * in a floating point representation (double precision, 
+ * extended range)
+ */
 long double findminld() {
    long double ppx = 0.0;
    long double px = 0.0;
@@ -184,6 +194,7 @@ long double findminld() {
    return ppx;
 }
 
+/* The main function of the program  */
 int main(int argc,char *argv[]) {
 
    /* Calculate long double precision */

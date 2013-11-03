@@ -5,20 +5,17 @@ all:
 	make sum
 	make operations
 
-speed:
-	gcc speedtest.c -o speed -lm
+stats: main.c
+	gcc main.c -o stats -lm
 
-stats:
-	gcc main.c -o stats
+sum: sum.c
+	gcc sum.c -o sum -lm
 
-sum:
-	gcc sum.c -o sum
-
-precision:
+operations: operations.c
 	gcc operations.c -o operations -lm
 
 clean:
-	rm -f speed stats sum precision
+	rm -f speed stats sum operations
 
 default:
 	all

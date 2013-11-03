@@ -8,6 +8,7 @@
 #include <math.h>
 #include <float.h>
 
+/* The main function */
 int main(int argc, char *argv[]) {
    
    /* Generate Inf */	
